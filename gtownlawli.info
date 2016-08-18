@@ -1,0 +1,68 @@
+; Packaging information for gtownlawli
+name = "gtownlawli"
+description = "Customizable link shortener for the Georgetown Law Library"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = filter
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = system
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Other
+dependencies[] = token
+; ShURLy
+dependencies[] = shurly
+dependencies[] = shurly_service
+; Views
+dependencies[] = views
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'ember'
+variables[anonymous] = 'Anonymous'
+variables[cache_class_cache_ctools_css] = 'CToolsCssCache'
+variables[date_default_timezone] = 'America/New_York'
+variables[date_first_day] = '0'
+variables[default_nodes_main] = '10'
+variables[field_bundle_settings_user__user][view_modes][full][custom_settings] = false
+variables[field_bundle_settings_user__user][view_modes][token][custom_settings] = false
+variables[field_bundle_settings_user__user][extra_fields][form][account][weight] = '-10'
+variables[field_bundle_settings_user__user][extra_fields][form][timezone][weight] = '6'
+variables[field_bundle_settings_user__user][extra_fields][display][summary][default][weight] = '5'
+variables[field_bundle_settings_user__user][extra_fields][display][summary][default][visible] = false
+variables[filter_fallback_format] = 'plain_text'
+variables[node_admin_theme] = 1
+variables[node_options_page][0] = 'status'
+variables[shurly_base] = 'http://gtownlaw.li'
+variables[shurly_counter] = 3252
+variables[shurly_throttle][3][rate] = ''
+variables[shurly_throttle][3][time] = ''
+variables[shurly_throttle][3][weight] = '0'
+variables[site_403] = 'user'
+variables[site_frontpage] = 'shurly'
+variables[theme_default] = 'bootstrap'
+variables[user_cancel_method] = 'user_cancel_block'
+variables[user_default_timezone] = '0'
+variables[user_email_verification] = 1
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_path] = 'pictures'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = '0'
+variables[views_defaults][shurly_admin] = true
+variables[views_defaults][shurly_my_urls] = true
+
